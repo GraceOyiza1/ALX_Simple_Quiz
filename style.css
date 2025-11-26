@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    padding: 20px;
 
-    /* * FIX: These lines are NECESSARY to center the content 
-    * horizontally and vertically on the entire screen.
+    /* FIX: These lines are NECESSARY to center the content 
+    * horizontally and vertically on the entire screen (the "centre").
     */
     display: flex;
     justify-content: center;
@@ -13,23 +14,20 @@ body {
     /* Makes the body take up the full screen height */
     margin: 0;
     /* Removes default margin */
-
-    padding: 20px;
-    /* Kept the original padding */
     background-color: #f5f5f5;
-    /* Added a light background for visual contrast */
+    /* Added background for visual contrast */
 }
 
 #quiz-container {
     max-width: 600px;
-    /* margin: auto works because the body is a flex container */
+    /* margin: auto works great with the body's display: flex */
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
-    /* Explicitly set the card background to white */
+    /* Ensures the card background is white */
 }
 
 #quiz-question {
@@ -50,9 +48,10 @@ label {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
-    /* FIX: This is the correct rule that makes the button blue */
+    /* FIX: This sets the button color to blue */
     background-color: #007bff;
     color: white;
+    /* Ensures the text is white */
     border: none;
     border-radius: 5px;
     cursor: pointer;
